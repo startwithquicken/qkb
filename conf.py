@@ -4,10 +4,11 @@ release = '1.0'
 
 extensions = []
 
-templates_path = []
-
 exclude_patterns = [
     '_build',
+    '.git',
+    '.github',
+    '.readthedocs.yaml',
     'Thumbs.db',
     '.DS_Store',
 ]
@@ -15,9 +16,6 @@ exclude_patterns = [
 html_theme = 'alabaster'
 
 html_static_path = ['_static']
-
-# IMPORTANT: serve existing HTML files
-html_extra_path = ['.']
 
 master_doc = 'index'
 
